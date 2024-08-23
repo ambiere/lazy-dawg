@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 runLazygit() {
+	#check if lazygit is installed
 	if command -v lazygit >/dev/null 2>&1; then
 		if [[ "$1" == "newSession" ]]; then
 			echo "[tmux: session] creating new session"
